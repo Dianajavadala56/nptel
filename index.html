@@ -4,53 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 3</title>
-    <link rel="stylesheet" href="C:/WebDevTestByRaghava/Test3.css">
+    <link rel="stylesheet" href="./Test3.css">
 </head>
 <body>
+        
         <div class="container">
-            <img src="WhatsApp Image 2024-04-04 at 12.09.15_3ad83f7b.jpg" alt="NPTELlogo" width="280px" height="60px">
-            <div style="font-size: 40px;margin-left: 450px; margin-top: 100px; display:flex; flex-direction: column;">
-                 NPTEL Certification
-                <div style="display: flex; flex-direction: row;">
-                    <img style="margin-left: 530px;margin-top: 92px;" src="WhatsApp Image 2024-04-04 at 12.09.15_7979c3f5.jpg" alt="clickme" width="60px" height="35px" >
-                    <a href="nptel.pdf">Click Here!!</a>
+            <img src="./Photos/Image4.png" class="nptel-logo"  alt="NPTELlogo" >
+            <div class="right-part">
+                <p >Jan - Apr 2024 NPTEL Exams</p>
+                <div class="click-here" >
+                    <img  src="./Photos/Image5.png" alt="clickme" >
+                    <a href="https://nptel.ac.in/">Click Here!!</a>
                 </div>
                 
             </div>
         </div>
+   
 </body>
     <style>
-    body
-{
-    background-color: rgb(232, 253, 255);
+    .right-part p{
+    font-size:2em;
 }
-.container
-{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.597);
-    width: 80%;
-    height: 300px;
-    position: absolute;
-    left: 10%;
-    top: 0%;
-    display: flex;
-    flex-direction: row;
+.click-here{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-img
-{
-    position:absolute;
-    top: 32%;
-    left: 5%;
+.click-here img{
+    width:30px;
 }
-a
-{
-    margin-top: 45px;
-    margin-left: 200px;
-    text-decoration: none;
-    font-size: 25px;
-    color: blue;
-    </style>
-}
+
+@media screen and (max-width:1440px) {
+    .container {
+     justify-content: center;
+     align-items: center;
+    }
+    .right-part{
+        justify-content: center;
+        align-items:center;
+    }
+  }
+</style>
 </html>
